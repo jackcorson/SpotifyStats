@@ -1,0 +1,11 @@
+/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/deps/ipnet-028f551f4004860f.d: /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/lib.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipext.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipnet.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/mask.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/parser.rs
+
+/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/deps/libipnet-028f551f4004860f.rlib: /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/lib.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipext.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipnet.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/mask.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/parser.rs
+
+/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/deps/libipnet-028f551f4004860f.rmeta: /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/lib.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipext.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipnet.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/mask.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/parser.rs
+
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/lib.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipext.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/ipnet.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/mask.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/parser.rs:

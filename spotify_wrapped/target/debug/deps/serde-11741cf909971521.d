@@ -1,0 +1,14 @@
+/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/deps/serde-11741cf909971521.d: /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/build/serde-79a9ff76992ed163/out/private.rs
+
+/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/deps/libserde-11741cf909971521.rlib: /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/build/serde-79a9ff76992ed163/out/private.rs
+
+/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/deps/libserde-11741cf909971521.rmeta: /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/build/serde-79a9ff76992ed163/out/private.rs
+
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/jackcorson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/build/serde-79a9ff76992ed163/out/private.rs:
+
+# env-dep:OUT_DIR=/home/jackcorson/rust/SpotifyStats/spotify_wrapped/target/debug/build/serde-79a9ff76992ed163/out
