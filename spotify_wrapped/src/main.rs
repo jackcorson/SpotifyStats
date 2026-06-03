@@ -1,77 +1,31 @@
-use dotenvy::dotenv;
+mod current;
 
-use rspotify::{
-    clients::{BaseClient, OAuthClient},
-    model::PlayableItem,
-    scopes,
-    AuthCodeSpotify,
-    Credentials,
-    OAuth,
-};
+use clap::{Parser};
+
+#[derive(Parser)]
+enum WhatStats {
+    #[command(name = "current")]
+    Current,
+
+    #[command(name = "stats")]
+    Stats {
+        length: String
+    },
+}
 
 #[tokio::main]
 async fn main() {
-    dotenv().ok();
+    let what_stats = WhatStats::parse();
 
-    let creds = Credentials::from_env().unwrap();
-
-    let oauth = OAuth {
-        redirect_uri: std::env::var("RSPOTIFY_REDIRECT_URI").unwrap(),
-        scopes: scopes!(
-            "user-read-currently-playing",
-            "user-read-playback-state"
-        ),
-        ..Default::default()
-    };
-
-    let spotify = AuthCodeSpotify::new(creds, oauth);
-
-    let url = spotify.get_authorize_url(false).unwrap();
-
-    println!("Open this URL in your browser:\n{}", url);
-
-    spotify.prompt_for_token(&url).await.unwrap();
-
-    let playback = spotify
-    .current_playback(None, None::<Vec<_>>)
-    .await;
-
-    match playback {
-        Ok(Some(context)) => {
-            if let Some(item) = context.item {
-                match item {
-                    PlayableItem::Track(track) => {
-                        println!("Currently playing: {}", track.name);
-                    }
-                    PlayableItem::Episode(episode) => {
-                        println!("Currently playing podcast: {}", episode.name);
-                    }
-                    PlayableItem::Unknown(value) => {
-                        let track_name = value
-                            .get("name")
-                            .and_then(|v| v.as_str())
-                            .unwrap_or("Unknown");
-
-                        let artist_name = value
-                            .get("artists")
-                            .and_then(|v| v.as_array())
-                            .and_then(|artists| artists.first())
-                            .and_then(|artist| artist.get("name"))
-                            .and_then(|v| v.as_str())
-                            .unwrap_or("Unknown Artist");
-
-                        println!("Currently playing: {} by {}", track_name, artist_name);
-                    }
-                }
-            } else {
-                println!("No item currently playing");
+    match what_stats { 
+        WhatStats::Current => {current::get_current_listening().await;},
+        WhatStats::Stats {length} => {
+            match length.to_lowercase().as_str() {
+                "monthly" => println!("Monthly stats coming up"),
+                "yearly" => println!("Yearly stats coming up"),
+                "alltime" => println!("Alltime stats coming up"),
+                _ => println!("INVALID OPTION... Please input either 'monthly', 'yearly', or 'alltime'"),
             }
-        }
-        Ok(None) => {
-            println!("No active playback");
-        }
-        Err(e) => {
-            println!("Spotify API error: {:?}", e);
-        }
-    }
+        },
+    }   
 }

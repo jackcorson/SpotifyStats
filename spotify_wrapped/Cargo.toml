@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-clap = "4.6.1"
+clap = { version = "4.3", features = ["derive"] }
 dotenvy = "0.15.7"
 reqwest = "0.13.4" # May not need (look into rspotify a bit more)
 rspotify = { version = "0.16.1", features = ["cli"] }
