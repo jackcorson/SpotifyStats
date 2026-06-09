@@ -18,7 +18,7 @@ pub async fn get_current_listening() {
     determine_track(playback);
 }
 
-fn load_env_vars() -> Credentials {
+pub fn load_env_vars() -> Credentials {
     dotenv().ok();
 
     let creds = Credentials::from_env().unwrap();
@@ -27,7 +27,7 @@ fn load_env_vars() -> Credentials {
 }
 
 async fn get_handle(creds: Credentials) -> ClientResult<Option<CurrentPlaybackContext>> {
-        let oauth = OAuth {
+    let oauth = OAuth {
         redirect_uri: std::env::var("RSPOTIFY_REDIRECT_URI").unwrap(),
         scopes: scopes!(
             "user-read-currently-playing",
