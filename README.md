@@ -3,7 +3,7 @@ My very own Spotify Wrapped.
 For client id and client secret, create a Spotify api account, click your profile icon in the top left,
 then select Dashboard. Create a project with the Redirect URI listed above.
 
-Naviagte to the location of the binary file.
+Navigate to the location of the binary file.
 
 ```bash
 cd /path/to/spotify_wrapped
