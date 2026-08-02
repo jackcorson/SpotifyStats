@@ -1,15 +1,22 @@
 My very own Spotify Wrapped.
 
-First, create a .env file. Run commands below to do so.
+For client id and client secret, create a Spotify api account, click your profile icon in the top left,
+then select Dashboard. Create a project with the Redirect URI listed above.
+
+Naviagte to the location of the binary file.
+
+```bash
+cd /path/to/spotify_wrapped
+chmod +x spotify_wrapped
+```
+
+Set up your .env file.
 
 ```bash
 cp .env.example .env
 ```
 
-Open up your .env file and fill in the top two values.
-
-For client id and client secret, create a spotify api account, click your profile icon in the top left,
-then select Dashboard. Create a project with the Redirect URI listed above.
+Open .env file and fill in top two values with API codes you got from Spotify.
 
 Perform command below to retrieve the current song playing
 ```bash
